@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/jdSgE6rbYbYNaAIotVL4SzlgSXXf9qKVcTTAlq9ylho/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy84/Lzg0L1Nwb3RpZnlf/aWNvbi5zdmc">
+
+  </head>
+  <body>
+    <!-- <img src="logo.svg" alt=""> -->
+
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home rounded bg-grey m-1 p-1">
+          <div class="logo">
+            <div><img class="invert logo-img" src="logo.svg" alt="" />Spotify</div>
+              <img class="invert cross" src="cross.svg" alt="">
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="Home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="Search" />Search</li>
+          </ul>
+        </div>
+
+        <div class="library rounded bg-grey m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="playlist.svg" alt="" />
+            <h2>Your library</h2>
+          </div>
+
+          <div class="songList">
+            <ul>
+            </ul>
+          </div>
+
+          <div class="footer">
+            <div><a href="https://www.spotify.com/in-en/legal/"></a>Legal</div>
+            <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"></a>Safety</div>
+            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"></a>Privacy Policy</div>
+            <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"></a>Cookies</div>
+            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"></a>About Ads</div>
+            <div><a href="https://www.spotify.com/in-en/accessibility/"></a>Accessibility</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="right border bg-grey rounded">
+        <div class="header">
+            <div class="nav">
+                <img class="invert hamburger" src="hamburger.svg" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+
+            <div class="buttons">
+              <button class="signupbtn">Sign Up</button>
+              <button class="loginbtn">Log In</button>
+            </div>
+        </div>
+
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+
+          <div class="cardContainer">
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e02bd36c37fc3755a680b269873" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3" alt="">
+              <h2>Feel-Good Vibes</h2>
+              <p>The perfect mix to lift your spirits and keep your mood sky-high.</p>
+            </div>
+            
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e0283141000ee8ce3b893a0b425" alt="">
+              <h2>Mood Booster</h2>
+              <p>Turn that frown upside down with these energizing and cheerful tracks.</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://imgs.search.brave.com/qbYSqA5NOSMByCzjo73dkZJQFcyH2FDnNnMuxcORSPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9t/ZWRpdW0tc2hvdC13/b21hbi1wb3Npbmct/d2l0aC1kb3VibGUt/ZXhwb3N1cmVfMjMt/MjE1MTEwNTcyMy5q/cGc_c2VtdD1haXNf/aHlicmlkJnc9NzQw" alt="">
+              <h2>Sunshine Beats</h2>
+              <p>Bright, warm, and happy — like a summer day for your ears.</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://imgs.search.brave.com/9Y6-8uZCjRrxJcQ5hxRtnWA48CTEePPlnpZvvh4Ic1w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vRUFFZGZ3/M3hQUGMvMS8wLzE2/MDB3L2NhbnZhLXBp/bmstc3Vuc2V0LXR1/bWJsci1hZXN0aGV0/aWMtbG92ZS1zb25n/cy1wbGF5bGlzdC1j/b3Zlci1JZVlJVXUx/aVJIUS5qcGc" alt="">
+              <h2>Uplift & Unwind</h2>
+              <p>Relax and recharge with melodies that feel like a cozy hug.</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c3d17d48e27e47b03a9145b2a" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://imgs.search.brave.com/ZKCe0xPvhYbOVBd33w7EDgjciE2kHwIoYyT6GYejvY0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9weC13/ZWItaW1hZ2VzNC5w/aXhwYS5jb20vb0pp/Sl84Y2pRQ0NwLXJ0/M2NzWXczcjkzaXJE/RW0xdFlmZU1ZcDZj/dklwOC9yczpmaXQ6/MTIwMDowL3E6ODAv/YUhSMGNITTZMeTl3/YVhod1lXTnZiUzFw/YldjdWNHbDRjR0V1/WTI5dEwyTnZiUzlo/Y25ScFkyeGxjeTh4/TlRrME56STVNREV4/TFRFd01qRTNPQzFo/YkdWNFlXNWtaWEl0/Y0c5d2IzWXRjR3Bu/WnpFMGRHTjJkSFV0/ZFc1emNHeGhjMmhx/Y0djdWFuQm4" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e02931b61b7382db17ed15e75fc" alt="">
+              <h2>Smiles All Around</h2>
+              <p>A playlist to make you dance, smile, and forget your worries.</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://imgs.search.brave.com/qQp9nUvFyFm2FkugrG39nVTFBOXtH4HyUDzVhGNcgsU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hZXN0aGV0aWMt/Z3JhaW55LWJyb3du/LWJlYXV0aWZ1bC13/b21hbi1wb3J0cmFp/dC13aXRoLWxlYXZl/cy1iZWF1dHktZmFz/aGlvbi1tb2RlbC1w/b3J0cmFpdF8xMjU0/ODI5LTYwMDIuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MA" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e025fe9856a449aab589c06b6c8" alt="">
+              <h2>Joyride Jams</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Your go-to soundtrack for starting the day on a high note.</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://imgs.search.brave.com/UQnjKrIDxosnZ8d8JXLBplyxDqUQLOdtMJVUd9TkivU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvYWVzdGhldGlj/LXBpY3R1cmVzLWh2/NmY4OHBhcXRzZXFo/OTIuanBn" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e025fe9856a449aab589c06b6c8" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://imgs.search.brave.com/UQnjKrIDxosnZ8d8JXLBplyxDqUQLOdtMJVUd9TkivU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvYWVzdGhldGlj/LXBpY3R1cmVzLWh2/NmY4OHBhcXRzZXFo/OTIuanBn" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+            <div class="card">
+              <svg class="cir-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                <circle cx="16" cy="16" r="15" fill="#1ed760" stroke="none"/>
+                <path d="M21.8906 16.846C21.5371 18.189 19.8667 19.138 16.5257 21.0361C13.296 22.8709 11.6812 23.7884 10.3798 23.4196C9.8418 23.2671 9.35159 22.9776 8.95624 22.5787C8 21.6139 8 19.7426 8 16C8 12.2574 8 10.3861 8.95624 9.42132C9.35159 9.02245 9.8418 8.73288 10.3798 8.58042C11.6812 8.21165 13.296 9.12907 16.5257 10.9639C19.8667 12.862 21.5371 13.811 21.8906 15.154C22.0365 15.7084 22.0365 16.2916 21.8906 16.846Z" fill="black"/>
+            </svg>
+              <img src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3" alt="">
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="playbox">
+          <div class="songName" id="song-title">No song selected</div>
+          <div class="playbtn">
+              <div class="btns">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                  <path d="M19.5576 4L20.4551 4.97574C20.8561 5.41165 21.0566 5.62961 20.9861 5.81481C20.9155 6 20.632 6 20.0649 6C18.7956 6 17.2771 5.79493 16.1111 6.4733C15.3903 6.89272 14.8883 7.62517 14.0392 9M3 18H4.58082C6.50873 18 7.47269 18 8.2862 17.5267C9.00708 17.1073 9.50904 16.3748 10.3582 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M19.5576 20L20.4551 19.0243C20.8561 18.5883 21.0566 18.3704 20.9861 18.1852C20.9155 18 20.632 18 20.0649 18C18.7956 18 17.2771 18.2051 16.1111 17.5267C15.2976 17.0534 14.7629 16.1815 13.6935 14.4376L10.7038 9.5624C9.63441 7.81853 9.0997 6.9466 8.2862 6.4733C7.47269 6 6.50873 6 4.58082 6H3" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <!-- prev button: -->
+                  <img class="prev-btn" src="prev.svg" alt="">
+
+              <div>
+                <img id="play_pause" src="play.svg" class="invert">
+              </div>
+
+              <img class="next-btn" src="next.svg" alt="">
+              </div>
+
+              <div class="seek">
+                <div class="player">
+                  <audio id="audio" src="your-audio-file.mp3"></audio>
+                  
+                  <div class="time-container">
+                      <span id="current-time">00:00</span>
+                      <input type="range" id="seek-bar" min="0" value="0" step="0.1">
+                      <span id="total-time">00:00</span>
+                  </div>
+              </div>              
+
+              </div>
+          </div>
+
+          <div class="otherbtns">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#ffffff" fill="none">
+              <path d="M2 9C2 5.70017 2 4.05025 3.02513 3.02513C4.05025 2 5.70017 2 9 2H11C14.2998 2 15.9497 2 16.9749 3.02513C18 4.05025 18 5.70017 18 9V11C18 14.2998 18 15.9497 16.9749 16.9749C15.9497 18 14.2998 18 11 18H9C5.70017 18 4.05025 18 3.02513 16.9749C2 15.9497 2 14.2998 2 11V9Z" stroke="currentColor" stroke-width="1.5" />
+              <path d="M18.2383 7C19.5732 7.08138 20.4232 7.30467 21.036 7.91738C22 8.88143 22 10.433 22 13.5363V15.4171C22 18.5203 22 20.0719 21.036 21.036C20.0719 22 18.5203 22 15.4171 22H13.5363C10.433 22 8.88143 22 7.91738 21.036C7.30467 20.4232 7.08138 19.5732 7 18.2383" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M11 12V6C11.2222 6.4 11.4 8.08 13 8.4M11 12C11 13.1046 10.1046 14 9 14C7.89543 14 7 13.1046 7 12C7 10.8954 7.89543 10 9 10C10.1046 10 11 10.8954 11 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#ffffff" fill="none">
+            <path d="M7 17L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M12 17L12 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M17 17L17 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#ffffff" fill="none">
+          <path d="M21 14C21 15.4001 21 16.1002 20.7275 16.635C20.4878 17.1054 20.1054 17.4878 19.635 17.7275C19.1002 18 18.4001 18 17 18H7C5.59987 18 4.8998 18 4.36502 17.7275C3.89462 17.4878 3.51217 17.1054 3.27248 16.635C3 16.1002 3 15.4001 3 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M6 14H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M6 10H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M6 6H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#0ffffff" fill="none">
+        <path d="M18 13.8045C18 13.4588 18 13.286 18.0416 13.132C18.1626 12.6844 18.4814 12.5108 18.8009 12.3289C19.16 12.1244 19.3396 12.0222 19.5175 12.0042C19.7194 11.9838 19.9218 12.0382 20.0944 12.1593C20.3233 12.3198 20.4829 12.6249 20.6463 12.873C21.401 14.0188 21.7784 14.5918 21.9164 15.2236C22.0279 15.7334 22.0279 16.2666 21.9164 16.7764C21.715 17.6979 21.0788 18.4704 20.6078 19.1854C20.3669 19.5511 20.2465 19.734 20.0944 19.8407C19.9218 19.9618 19.7194 20.0162 19.5175 19.9958C19.3396 19.9778 19.16 19.8756 18.8009 19.6711C18.4814 19.4892 18.1626 19.3156 18.0416 18.868C18 18.714 18 18.5412 18 18.1955V13.8045Z" stroke="currentColor" stroke-width="1.5" />
+        <path d="M9 15.1148C9.86163 14.4098 10.8907 14 11.9959 14C13.1047 14 14.1367 14.4123 15 15.1215M13.6307 17.5C13.1386 17.1913 12.5834 17.0177 11.9959 17.0177C11.4114 17.0177 10.8588 17.1896 10.3686 17.4954" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M12 20H12.0064" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M6 13.8045C6 13.3693 5.99022 12.9782 5.70873 12.6722C5.60634 12.5609 5.4706 12.4836 5.19913 12.329C4.84001 12.1246 4.66045 12.0224 4.48253 12.0044C3.94873 11.9504 3.66154 12.4058 3.3537 12.8731C2.599 14.0189 2.22165 14.5918 2.08357 15.2236C1.97214 15.7334 1.97214 16.2666 2.08357 16.7764C2.28496 17.6979 2.92122 18.4702 3.39217 19.1852C3.68903 19.6359 3.97261 20.0472 4.48253 19.9956C4.66045 19.9776 4.84001 19.8754 5.19913 19.6709C5.4706 19.5164 5.60634 19.4391 5.70873 19.3278C5.99022 19.0218 6 18.6307 6 18.1954V13.8045Z" stroke="currentColor" stroke-width="1.5" />
+        <path d="M20 12V10.875C20 6.52576 16.4183 3 12 3C7.58172 3 4 6.52576 4 10.875V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+    </svg>
+
+    <div class="volume-control">
+      <button id="mute-btn">🔊</button>
+      <input type="range" id="volume-bar" min="0" max="1" step="0.01" value=".2">
+  </div>
+  
+  <audio class="invert" id="audio" src="your-audio-file.mp3" autoplay></audio>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#ffffff" fill="none">
+    <path d="M12 21.5V7M15 19C14.4102 19.6068 12.8403 22 12 22C11.1597 22 9.58984 19.6068 9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M20.2327 11.5C21.4109 12.062 22 12.4405 22 13.0001C22 13.6934 21.0958 14.1087 19.2873 14.9395L15.8901 16.5M3.76727 11.5C2.58909 12.062 2 12.4405 2 13.0001C2 13.6934 2.90423 14.1087 4.7127 14.9395L8.1099 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M8.11012 10.5L4.7127 8.93936C2.90423 8.10863 2 7.69326 2 7C2 6.30674 2.90423 5.89137 4.7127 5.06064L9.60573 2.81298C10.7856 2.27099 11.3755 2 12 2C12.6245 2 13.2144 2.27099 14.3943 2.81298L19.2873 5.06064C21.0958 5.89137 22 6.30674 22 7C22 7.69326 21.0958 8.10863 19.2873 8.93937L15.8899 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#ffffff" fill="none">
+  <path d="M8.24202 15.758L15.758 8.24202M8.24202 15.758C8.66305 16.179 10.4989 15.9164 11.0605 15.9459M8.24202 15.758C7.82099 15.3369 8.08361 13.5011 8.05412 12.9395M15.758 8.24202C16.179 8.66305 15.9164 10.4989 15.9459 11.0605M15.758 8.24202C15.3369 7.82099 13.5011 8.08361 12.9395 8.05412" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+</svg>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
